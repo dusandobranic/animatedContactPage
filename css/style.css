@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  min-height: 100vh;
+}
+
+.contact-list ul {
+  position: relative;
+  display: flex;
+  transform-style: preserve-3d;
+  transform: rotate(-25deg) skew(25deg);
+}
+
+.contact-list ul li {
+  position: relative;
+  list-style: none;
+  width: 120px;
+  height: 120px;
+  margin: 0 10px;
+}
+
+.contact-list ul li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 50px !important;
+}
+
+.contact-list ul li:hover span {
+  z-index: 1000;
+  transition: 0.4s;
+  color: #fff;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.contact-list ul li:hover span:nth-child(5) {
+  transform: translate(50px, -50px);
+  opacity: 1;
+}
+
+.contact-list ul li:hover span:nth-child(4) {
+  transform: translate(40px, -40px);
+  opacity: 0.8;
+}
+
+.contact-list ul li:hover span:nth-child(3) {
+  transform: translate(30px, -30px);
+  opacity: 0.6;
+}
+
+.contact-list ul li:hover span:nth-child(2) {
+  transform: translate(20px, -20px);
+  opacity: 0.4;
+}
+
+.contact-list ul li:hover span:nth-child(1) {
+  transform: translate(10px, -10px);
+  opacity: 0.2;
+}
+
+.contact-list ul li:nth-child(1):hover span {
+  background-color: #e4405f;
+}
+
+.contact-list ul li:nth-child(2):hover span {
+  background-color: #55acee;
+}
+
+.contact-list ul li:nth-child(3):hover span {
+  background-color: #25d366;
+}
+
+.contact-list ul li:nth-child(4):hover span {
+  background-color: #0077b5;
+}
+
+.contact-list ul li:nth-child(5):hover span {
+  background-color: #3b5999;
+}
